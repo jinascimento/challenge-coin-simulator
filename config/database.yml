@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  user: <%= ENV["CAMBIOSTORE_DB_USERNAME"] %>
+  password: <%= ENV["CAMBIOSTORE_DB_PASSWORD"] %>
+  host: <%= ENV["CAMBIOSTORE_DB_HOSTNAME"]  %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: <%= ENV["CAMBIOSTORE_DB_PORT"] %>
+
+development:
+  <<: *default
+  database: cambiostore_development
+
+test:
+  <<: *default
+  database: cambiostore_test
+
+production:
+  <<: *default
+  database: cambiostore_production
