@@ -1,42 +1,46 @@
 <%= stylesheet_link_tag    'quotes/index', media: 'all', 'data-turbolinks-track': 'reload' %>
 
 <div class="container">
+  <div class="container__simulator">
+    <div class="card-simulator">
+      <div class="card-simulator__title">
+        <p>
+          <span class="card-simulator__coin-name">Dólar comercial</span>
+          <span class="card-simulator__coin-value">R$ 3,7494</span>
+        </p>
+      </div>
 
-  <div class="card-simulator">
-    <div class="card-simulator__title">
-      <p>
-        <span class="card-simulator__coin-name">Dólar comercial</span>
-        <span class="card-simulator__coin-value">50</span>
-      </p>
-    </div>
-
-    <div class="card-simulator__content">
-      <div class="quote-form">
-        <div class="quote-form__content">
-          <div class="quote-form__box">
-            <img class="quote-form__locale-img" src="assets/ic_pin_drop_24px.png" alt="">
-            <input class="quote-form__input" type="text" id="input-locale" />
+      <div class="card-simulator__content">
+        <div class="quote-form">
+          <div class="quote-form__content">
+            <div class="quote-form__box">
+              <img class="quote-form__locale-img" src="assets/ic_pin_drop_24px.png" alt="">
+              <input class="quote-form__input" type="text" id="input-locale" />
+            </div>
+            <div class="quote-form__box">
+              <img class="quote-form__locale-img" src="assets/ic_pin_drop_24px.png" alt="">
+              <input type="text" id="input-coin" class="quote-form__input"/>
+            </div>
           </div>
-          <div class="quote-form__box">
-            <img class="quote-form__locale-img" src="assets/ic_pin_drop_24px.png" alt="">
-            <input type="text" id="input-coin" class="quote-form__input"/>
+          <div class="quote-form__button">
+            <button class="quote-form__button-submit"><span>Comparar casas de câmbio</span></button>
           </div>
-        </div>
-        <div class="quote-form__button">
-          <button class="quote-form__button-submit"><span>Comparar casas de câmbio</span></button>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="payment-information">
-    <div class="payment-information__credit-card-brand">
-      <img class="payment-information__card-image" src="assets/master_card.svg" alt="">
-      <img class="payment-information__card-image" src="assets/visa_card.svg" alt="">
-      <img class="payment-information__card-image" src="assets/amex_card.svg" alt="">
-      <img class="payment-information__card-image" src="assets/diners_card.svg" alt="">
-      <img class="payment-information__card-image" src="assets/aura_card.svg" alt="">
+    <div class="payment-information">
+      <div class="payment-information__credit-card-brand">
+        <img class="payment-information__card-image" src="assets/master_card.svg" alt="">
+        <img class="payment-information__card-image" src="assets/visa_card.svg" alt="">
+        <img class="payment-information__card-image" src="assets/amex_card.svg" alt="">
+        <img class="payment-information__card-image" src="assets/diners_card.svg" alt="">
+        <img class="payment-information__card-image" src="assets/aura_card.svg" alt="">
+      </div>
+      <p class="payment-information__description">Pague com seu cartão de crédito em até 12X</p>
     </div>
-    <p class="payment-information__description">Pague com seu cartão de crédito em até 12X</p>
+  </div>
+  <div class="container__summary-information">
+    Compare e compre online nas principais casas de câmbio do país
   </div>
 </div>
