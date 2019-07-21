@@ -10,26 +10,31 @@
 
     <div class="card-simulator__content">
       <div class="quote-form">
-        <label for="input-locale" class="quote-form__label">Local</label>
-        <input type="text" id="input-locale" class="quote-form__input"/>
-
-        <label for="input-coin" class="quote-form__label">Local</label>
-        <input type="text" id="input-coin" class="quote-form__input"/>
-
-        <button class="quote-form__button-submit">Comparar casas de câmbio</button>
+        <div class="quote-form__content">
+          <div class="quote-form__box">
+            <img class="quote-form__locale-img" src="assets/ic_pin_drop_24px.png" alt="">
+            <input class="quote-form__input" type="text" id="input-locale" />
+          </div>
+          <div class="quote-form__box">
+            <img class="quote-form__locale-img" src="assets/ic_pin_drop_24px.png" alt="">
+            <input type="text" id="input-coin" class="quote-form__input"/>
+          </div>
+        </div>
+        <div class="quote-form__button">
+          <button class="quote-form__button-submit"><span>Comparar casas de câmbio</span></button>
+        </div>
       </div>
     </div>
-
   </div>
 
   <div class="payment-information">
     <div class="payment-information__credit-card-brand">
-      <img src="/master_card.svg" alt="">
-      <img src="visa_card.svg" alt="">
-      <img src="amex_card.svg" alt="">
-      <img src="diners_card.svg" alt="">
-      <img src="aura_card.svg" alt="">
+      <img class="payment-information__card-image" src="assets/master_card.svg" alt="">
+      <img class="payment-information__card-image" src="assets/visa_card.svg" alt="">
+      <img class="payment-information__card-image" src="assets/amex_card.svg" alt="">
+      <img class="payment-information__card-image" src="assets/diners_card.svg" alt="">
+      <img class="payment-information__card-image" src="assets/aura_card.svg" alt="">
     </div>
-    <p class="payment-information__description">Page com seu cartão de crédito em até 12X</p>
+    <p class="payment-information__description">Pague com seu cartão de crédito em até 12X</p>
   </div>
 </div>

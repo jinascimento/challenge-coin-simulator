@@ -1,0 +1,136 @@
+@import "helpers/variables";
+@import "helpers/mixins.font";
+
+
+body, button {
+  background-color: #2A1674;
+  @include font-default;
+  margin: 0 0 0 0;
+}
+
+.container {
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+
+  .card-simulator {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 40vh;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #666666;
+
+    .card-simulator__title {
+      align-self: center;
+    }
+  }
+
+  .card-simulator__content {
+    flex-grow: 2;
+  }
+
+  .quote-form {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+
+    .quote-form__box {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      margin-right: 35px;
+    }
+
+    .quote-form__input {
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+
+    .quote-form__locale-img {
+      width: 25px;
+      height: 30px;
+    }
+
+    .quote-form__content {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .quote-form__button {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+    }
+
+    .quote-form__button-submit {
+      background-color: #F6560A;
+      color: #ffffff;
+      flex-grow: 1;
+      border-radius: 5px;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      border: 0;
+    }
+  }
+
+
+  .payment-information__card-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .payment-information {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
