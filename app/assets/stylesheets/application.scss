@@ -2,7 +2,7 @@
 @import "helpers/mixins.font";
 
 
-body, button {
+body, button, select {
   background-color: #2A1674;
   @include font-default;
   margin: 0 0 0 0;

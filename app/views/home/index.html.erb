@@ -8,6 +8,7 @@
           <span class="card-simulator__coin-name">Dólar comercial</span>
           <span class="card-simulator__coin-value">R$ 3,7494</span>
         </p>
+        <i class="fa fa-camera"></i>
       </div>
 
       <div class="card-simulator__content">
@@ -15,20 +16,27 @@
           <div class="quote-form__content">
             <div class="quote-form__box">
               <img class="quote-form__locale-img" src="assets/ic_pin_drop_24px.png" alt="">
-              <input class="quote-form__input" type="text" id="input-locale" />
+              <select class="quote-form__input">
+                <option value="SP">São Paulo (SP)</option>
+                <option value="RJ">Rio de Janeiro (RJ)</option>
+              </select>
             </div>
             <div class="quote-form__box">
               <img class="quote-form__locale-img" src="assets/ic_pin_drop_24px.png" alt="">
-              <input type="text" id="input-coin" class="quote-form__input"/>
+              <select class="quote-form__input">
+                <option value="USD">Dólar</option>
+                <option value="EUR">Euro</option>
+              </select>
             </div>
           </div>
           <div class="quote-form__button">
             <button class="quote-form__button-submit"><span>Comparar casas de câmbio</span></button>
+
           </div>
         </div>
       </div>
     </div>
-
+    <br>
     <div class="payment-information">
       <div class="payment-information__credit-card-brand">
         <img class="payment-information__card-image" src="assets/master_card.svg" alt="">

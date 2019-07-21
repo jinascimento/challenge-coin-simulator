@@ -17,7 +17,7 @@
   height: 40vh;
   padding: 25px;
   border-radius: 10px;
-  margin-top: -100px;
+  margin-top: -117px;
   margin-left: 20px;
 }
 
@@ -28,6 +28,7 @@
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   width: 370px;
   height: 40vh;
   padding: 25px;
@@ -37,10 +38,6 @@
 
   .card-simulator__title {
     align-self: center;
-  }
-
-  .card-simulator__content {
-    flex-grow: 2;
   }
 
   .quote-form {
@@ -72,6 +69,7 @@
       border: 0;
       background-color: #dadada3d;
       height: 40px;
+      color: #666666b5;
     }
 
     .quote-form__locale-img {
