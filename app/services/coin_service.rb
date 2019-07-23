@@ -1,6 +1,12 @@
 class CoinService
-  def get_quotes(coins = nil)
-    url = "#{EXTERNAL_RESOURCES_CONFIG['coin']}/all/#{coins}"
-    Faraday.get(url)
+  attr_reader :url
+
+  def initialize
+    @url = "#{EXTERNAL_RESOURCES_CONFIG['coin']}"
+  end
+
+  def get_quotes(coins)
+    response = Faraday.get("#{@url}/all/#{coins}")
+    JSON.parse(response.body)
   end
 end
