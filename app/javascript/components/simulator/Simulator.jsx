@@ -1,6 +1,7 @@
-import api from '../../services/api';
 import React from 'react';
-import Img from './Image';
+
+import api from '../../services/api';
+import Img from '../layout/Image';
 
 export default class Simulator extends React.Component {
     constructor(props) {
@@ -46,10 +47,10 @@ export default class Simulator extends React.Component {
                             </div>
                             <div className="quote-form__box">
                                 <Img class={'quote-form__locale-img'} path={'assets/ic_pin_drop_24px.png'} />
-                                    <select onChange={(e) => this.changeQuote(e.target.value)} className="quote-form__input">
-                                        <option value="USD">Dólar</option>
-                                        <option value="EUR">Euro</option>
-                                    </select>
+                                <select onChange={(e) => this.changeQuote(e.target.value)} className="quote-form__input">
+                                    <option value="USD">Dólar</option>
+                                    <option value="EUR">Euro</option>
+                                </select>
                             </div>
                         </div>
                         <div className="quote-form__button">
