@@ -1,5 +1,8 @@
 {
   "name": "cambio-store-challenge",
+  "engines": {
+    "node": "12.1.0"
+  },
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.0.0",
@@ -12,7 +15,7 @@
     "react-on-rails": "11.3.0"
     },
   "scripts": {
-    "postinstall": "cd client && npm install"
+    "postinstall": "npm install"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.7.2"
