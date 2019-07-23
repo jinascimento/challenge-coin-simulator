@@ -2,7 +2,7 @@ class CoinService
   attr_reader :url
 
   def initialize
-    @url = "#{EXTERNAL_RESOURCES_CONFIG['coin']}"
+    @url = "#{ENV['COINS_URL']}"
   end
 
   def get_quotes(coins)

@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import axios from 'axios';
+import api from '../../services/api';
 import React from 'react';
+import Img from './Image';
 
 export default class Simulator extends React.Component {
     constructor(props) {
@@ -13,9 +13,15 @@ export default class Simulator extends React.Component {
         };
     };
 
-    changeQuote = (quote) => (
-        this.setState({ quote })
-    );
+    async changeQuote(quote) {
+        let response = await api.get(`/all/${quote}`);
+        this.setState({
+            quote: {
+                value: response.data[quote].low,
+                name: response.data[quote].name
+            }
+        });
+    };
 
     render(){
         return(
@@ -32,15 +38,15 @@ export default class Simulator extends React.Component {
                     <div className="quote-form">
                         <div className="quote-form__content">
                             <div className="quote-form__box">
-                                <img className="quote-form__locale-img" src="assets/ic_pin_drop_24px.png" alt="" />
-                                    <select className="quote-form__input">
-                                        <option value="SP">São Paulo (SP)</option>
-                                        <option value="RJ">Rio de Janeiro (RJ)</option>
-                                    </select>
+                                <Img class={'quote-form__locale-img'} path={'assets/ic_pin_drop_24px.png'} />
+                                <select className="quote-form__input">
+                                    <option value="SP">São Paulo (SP)</option>
+                                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                                </select>
                             </div>
                             <div className="quote-form__box">
-                                <img className="quote-form__locale-img" src="assets/ic_pin_drop_24px.png" alt="" />
-                                    <select className="quote-form__input">
+                                <Img class={'quote-form__locale-img'} path={'assets/ic_pin_drop_24px.png'} />
+                                    <select onChange={(e) => this.changeQuote(e.target.value)} className="quote-form__input">
                                         <option value="USD">Dólar</option>
                                         <option value="EUR">Euro</option>
                                     </select>
