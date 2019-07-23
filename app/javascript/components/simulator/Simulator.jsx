@@ -37,7 +37,7 @@ export default class Simulator extends React.Component {
                     <div className="quote-form">
                         <div className="quote-form__content">
                             <div className="quote-form__box">
-                                <Img class={'quote-form__locale-img'} path={'assets/ic_pin_drop_24px.png'} />
+                                <i className="quote-form__cash-icon fa fa-map-marker"></i>
                                 <select className="quote-form__input">
                                     <option value="SP">São Paulo (SP)</option>
                                     <option value="RJ">Rio de Janeiro (RJ)</option>
