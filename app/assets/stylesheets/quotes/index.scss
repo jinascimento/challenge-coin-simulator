@@ -14,7 +14,7 @@
 .container__summary-information {
   border: 1px solid pink;
   width: 30vw;
-  height: 40vh;
+  height: 45vh;
   padding: 25px;
   border-radius: 10px;
   margin-top: -117px;
@@ -29,8 +29,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 370px;
-  height: 40vh;
+  width: 420px;
+  height: 45vh;
   padding: 25px;
   border-radius: 10px;
   background: #ffffff;
@@ -75,6 +75,17 @@
     .quote-form__locale-img {
       width: 25px;
       height: 30px;
+    }
+
+    .quote-form__search-icon {
+      margin-right: -13px;
+    }
+
+    .quote-form__cash-icon {
+      width: 25px;
+      height: 30px;
+      text-align: center;
+      color: #F6550B;
     }
 
     .quote-form__content {

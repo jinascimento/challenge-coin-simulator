@@ -32,9 +32,7 @@ export default class Simulator extends React.Component {
                         <span className="card-simulator__coin-name">{this.state.quote.name} </span>
                         <span className="card-simulator__coin-value">R$ {this.state.quote.value}</span>
                     </p>
-                    <i className="fa fa-camera"></i>
                 </div>
-
                 <div className="card-simulator__content">
                     <div className="quote-form">
                         <div className="quote-form__content">
@@ -44,9 +42,12 @@ export default class Simulator extends React.Component {
                                     <option value="SP">São Paulo (SP)</option>
                                     <option value="RJ">Rio de Janeiro (RJ)</option>
                                 </select>
+                                <div>
+                                    <i className="fa fa-search quote-form__search-icon"></i>
+                                </div>
                             </div>
                             <div className="quote-form__box">
-                                <Img class={'quote-form__locale-img'} path={'assets/ic_pin_drop_24px.png'} />
+                                <i className="fa fa-dollar quote-form__cash-icon"></i>
                                 <select onChange={(e) => this.changeQuote(e.target.value)} className="quote-form__input">
                                     <option value="USD">Dólar</option>
                                     <option value="EUR">Euro</option>
